@@ -20,4 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Car Parking Space Booking Application
+  app_description: A place where you can book spaces for your car
