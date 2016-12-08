@@ -28,3 +28,21 @@ en:
       title: Car Parking Space Bookings
       welcome: Welcome to the site which manages your car parking bookings!
       paragraph: We aim to make sure that you will be able to find a car parking space and how much it will cost you for that space
+
+    contact:
+      title: Contact Us
+      contact_us: Please complete the following form to get in contact with us.
+      
+      name: "Name:"
+      enter_name: Enter your name
+      email: "Email:"
+      enter_email: Enter your email address
+      telephone: "Telephone:"
+      enter_telephone: Enter your telephone number
+      message: "Message:"
+      enter_message: What do you want to say?
+      submit: Contact Us
+      
+      request_contact:
+        no_email: You have to supply an email address
+        email_sent: Thank you for your email. We will be in touch shortly.
