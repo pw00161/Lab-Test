@@ -26,7 +26,7 @@ class HomeControllerTest < ActionController::TestCase
 
   test "should post request contact" do
     post :request_contact,
-      name: "Piers", email: "pw00161@surrey.ac.uk",
+      name: "Piers Wareham", email: "pw00161@surrey.ac.uk",
       telephone: "+447944467130", message: "Problem?"
       
     assert_response :redirect
