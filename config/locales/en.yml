@@ -43,6 +43,6 @@ en:
       enter_message: What do you want to say?
       submit: Contact Us
       
-      request_contact:
-        no_email: You have to supply an email address
-        email_sent: Thank you for your email. We will be in touch shortly.
+    request_contact:
+      no_email: You have to supply an email address
+      email_sent: Thank you for your email. We will be in touch shortly.
