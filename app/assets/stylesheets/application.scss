@@ -16,3 +16,32 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$font: 'Times New Roman', 'Times', serif;
+$color: #b1b1b1;
+
+body {
+    font-family: $font;
+    background-color: $color;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    border-bottom: 5px solid red;
+}
+
+p1 {
+    text-align: center;
+    color: red;
+}
+
+p2 {
+    color: white;
+    text-align: left;
+}
