@@ -18,7 +18,7 @@ class PricesControllerTest < ActionController::TestCase
 
   test "should create price" do
     assert_difference('Price.count') do
-      post :create, price: { description: @price.description, title: @price.title }
+      post :create, price: { description: @price.description, title: @price.title + " create" }
     end
 
     assert_redirected_to price_path(assigns(:price))

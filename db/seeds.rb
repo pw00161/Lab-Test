@@ -6,7 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-welcome =Price.where(title: 'Welcome').first
+welcome = Price.where(title: 'Parking Charges').first
 welcome.delete if welcome
 
-prices = Price.create([title: 'Welcome', description: 'To the prices app.'])
+Price.delete_all
+prices = Price.create([title: 'Charge 1', description: 'Up to 1 Hour', cost: 1.00,])
+prices = Price.create([title: 'Charge 2', description: 'Up to 2 Hours', cost: 2.00,])
+prices = Price.create([title: 'Charge 3', description: 'Up to 3 Hours', cost: 3.00,])
+prices = Price.create([title: 'Charge 4', description: 'Up to 4 Hours', cost: 4.00,])
+prices = Price.create([title: 'Charge 5', description: 'Up to 5 Hours', cost: 5.00,])
+prices = Price.create([title: 'Charge 6', description: 'Up to 6 Hours', cost: 6.00,])
+prices = Price.create([title: 'Charge 7', description: 'Up to 7 Hours', cost: 6.50,])
