@@ -5,7 +5,7 @@
     %tr
       %th Title
       %th Description
-      %th Cost
+      %th Cost in £s
       %th
       %th
       %th
@@ -16,10 +16,5 @@
         %td= price.title
         %td= price.description
         %td= price.cost
-        %td= link_to 'Show', price
-        %td= link_to 'Edit', edit_price_path(price)
-        %td= link_to 'Destroy', price, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
-
-= link_to 'New Price', new_price_path

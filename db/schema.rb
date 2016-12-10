@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161210195023) do
+ActiveRecord::Schema.define(version: 20161210214740) do
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "locations", ["title"], name: "index_locations_on_title", unique: true
 
   create_table "prices", force: :cascade do |t|
     t.string   "title",       null: false
