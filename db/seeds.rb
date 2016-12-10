@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+welcome =Price.where(title: 'Welcome').first
+welcome.delete if welcome
+
+prices = Price.create([title: 'Welcome', description: 'To the prices app.'])
