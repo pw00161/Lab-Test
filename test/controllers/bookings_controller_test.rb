@@ -13,7 +13,7 @@ class BookingsControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, location_id: @location
     assert_response :success
   end
 

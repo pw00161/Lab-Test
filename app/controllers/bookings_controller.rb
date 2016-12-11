@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: [:show, :edit, :update, :destroy]
+  before_action :set_location, only: [:new, :create]
 
   # GET /bookings
   # GET /bookings.json
@@ -14,7 +15,7 @@ class BookingsController < ApplicationController
 
   # GET /bookings/new
   def new
-    @booking = Booking.new
+    @booking = @location.bookings.new
   end
 
   # GET /bookings/1/edit
@@ -24,7 +25,7 @@ class BookingsController < ApplicationController
   # POST /bookings
   # POST /bookings.json
   def create
-    @booking = Booking.new(booking_params)
+    @booking = @location.bookings.new(booking_params)
 
     respond_to do |format|
       if @booking.save
@@ -69,6 +70,10 @@ class BookingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def booking_params
-      params.require(:booking).permit(:location_id, :firstname, :lastname, :telephone, :email, :make, :string, :model, :registration_number)
+      params.require(:booking).permit(:location_id, :firstname, :lastname, :telephone, :email, :make, :model, :registration_number)
+    end
+    
+    def set_location
+      @location = Location.find_by(id: params[:location_id]) || Location.find(booking_params[:location_id])
     end
 end
