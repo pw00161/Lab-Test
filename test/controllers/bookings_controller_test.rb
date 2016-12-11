@@ -36,7 +36,7 @@ class BookingsControllerTest < ActionController::TestCase
   end
 
   test "should update booking" do
-    patch :update, id: @booking, booking: { email: @booking.email, firstname: @booking.firstname, lastname: @booking.lastname, location_id: @location, make: @booking.make, model: @booking.model, registration_number: @booking.registration_number, telephone: @booking.telephone }
+    patch :update, id: @booking, booking: { email: @booking.email, firstname: @booking.firstname, lastname: @booking.lastname, location_id: @location, make: @booking.make, model: @booking.model, registration_number: @booking.registration_number, telephone: @booking.telephone, duration: @booking.duration }
     assert_redirected_to booking_path(assigns(:booking))
   end
 

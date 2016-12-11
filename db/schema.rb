@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161210235031) do
+ActiveRecord::Schema.define(version: 20161211232226) do
 
   create_table "bookings", force: :cascade do |t|
     t.integer  "location_id"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20161210235031) do
     t.string   "registration_number"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.string   "duration"
   end
 
   add_index "bookings", ["location_id"], name: "index_bookings_on_location_id"

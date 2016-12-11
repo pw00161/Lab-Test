@@ -22,6 +22,7 @@
       %th Make
       %th Model
       %th Registration number
+      %th Duration
       %th
       %th
       %th
@@ -37,6 +38,7 @@
         %td= booking.make
         %td= booking.model
         %td= booking.registration_number
+        %td= booking.duration
         %td= link_to 'Show', booking
         %td= link_to 'Edit', edit_booking_path(booking)
         %td= link_to 'Destroy', booking, :method => :delete, :data => { :confirm => 'Are you sure?' }

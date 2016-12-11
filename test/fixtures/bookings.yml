@@ -9,6 +9,7 @@ one:
   make: MyString
   model: MyString
   registration_number: MyString
+  duration: MyString
 
 two:
   location: two
@@ -19,3 +20,4 @@ two:
   make: MyString
   model: MyString
   registration_number: MyString
+  duration: MyString

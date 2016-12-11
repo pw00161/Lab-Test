@@ -9,6 +9,7 @@ class CreateBookings < ActiveRecord::Migration
       t.string :make
       t.string :model
       t.string :registration_number, null: false
+      t.string :duration, null: false
 
       t.timestamps null: false
     end
