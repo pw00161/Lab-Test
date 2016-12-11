@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Location:
+  = @booking.location
+%p
+  %b Firstname:
+  = @booking.firstname
+%p
+  %b Lastname:
+  = @booking.lastname
+%p
+  %b Telephone:
+  = @booking.telephone
+%p
+  %b Email:
+  = @booking.email
+%p
+  %b Make:
+  = @booking.make
+%p
+  %b Model:
+  = @booking.model
+%p
+  %b Registration number:
+  = @booking.registration_number
+
+= link_to 'Edit', edit_booking_path(@booking)
+\|
+= link_to 'Back', bookings_path
