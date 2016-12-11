@@ -9,7 +9,7 @@
   .field
     = f.label :location
     %p= @booking.location.description
-    f.hidden_field :location_id, value: @booking.location.id
+    = f.hidden_field :location_id, value: @booking.location.id
   .field
     = f.label :firstname
     = f.text_field :firstname

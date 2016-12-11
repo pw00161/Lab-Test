@@ -6,6 +6,11 @@ class BookingsController < ApplicationController
   # GET /bookings.json
   def index
     @bookings = Booking.all
+    if params[:search]
+      @bookings = Booking.search(params[:search]).order("created_at DESC")
+    else
+      @bookings = Booking.all.order('created_at DESC')
+    end
   end
 
   # GET /bookings/1

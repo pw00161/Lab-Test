@@ -27,8 +27,9 @@ en:
     home:
       title: Car Parking Space Bookings
       welcome: Welcome to the site which manages your car parking bookings!
-      paragraph: We aim to make sure that you will be able to find a car parking space and how much it will cost you for that space
-
+      paragraph: We aim to make sure that you will be able to find a car parking space and how much it will cost you for that space. This site is dedicated to finding a car parking space that will be avaliable to you for your allocated time slot. These car parking spaces are only restricted to the Guildford Road car park and will slowly expand to other car parks around Guildford and eventually the UK
+      paragraph2: In the site, you will be able to find affordable prices on Guildford Road and be able to book early. For more information please contact us 
+      
     contact:
       title: Contact Us
       contact_us: Please complete the following form to get in contact with us.
@@ -46,3 +47,9 @@ en:
     request_contact:
       no_email: You have to supply an email address
       email_sent: Thank you for your email. We will be in touch shortly.
+      
+  bookings:
+    index:
+      search: "Search:"
+      enter_a_search: Enter a search
+      

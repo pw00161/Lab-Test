@@ -1,5 +1,16 @@
 %h1 Listing bookings
 
+= form_tag bookings_path, method: 'get' do
+  = label_tag :search, t('.search')
+  = text_field_tag :search, '', title: t('.enter_a_search')
+  
+  = submit_tag t('.search')
+  
+- if @bookings.present?
+  - render @bookings
+- else
+  %p There are no bookings with that description
+
 %table
   %thead
     %tr
@@ -18,7 +29,7 @@
   %tbody
     - @bookings.each do |booking|
       %tr
-        %td= booking.location
+        %td= booking.location.description
         %td= booking.firstname
         %td= booking.lastname
         %td= booking.telephone
